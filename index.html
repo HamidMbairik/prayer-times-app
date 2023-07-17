@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Prayer Times | Hamid Mbairik</title>
+  </head>
+  <body>
+    <main>
+      <!-- Header -->
+      <h1 class="project-title">Prayer Times</h1>
+      <div class="city">
+        <h2 class="city-name-en" id="en-city-name">city name</h2>
+        <h2 class="city-name-ar" id="ar-city-name">اسم المدينة</h2>
+      </div>
+      <h1 class="date" id="date">17/07/2023</h1>
+      <div class="times">
+        <div class="first-two block">
+          <div class="time">
+            <h1 class="prayer-name">الشروق</h1>
+            <h2 class="prayer" id="shoro9">00:00</h2>
+          </div>
+          <div class="time">
+            <h1 class="prayer-name">الفجر</h1>
+            <h2 class="prayer" id="fajer">00:00</h2>
+          </div>
+        </div>
+        <div class="second-two block">
+          <div class="time">
+            <h1 class="prayer-name">الظهر</h1>
+            <h2 class="prayer" id="doher">00:00</h2>
+          </div>
+          <div class="time">
+            <h1 class="prayer-name">العصر</h1>
+            <h2 class="prayer" id="3aser">00:00</h2>
+          </div>
+        </div>
+        <div class="third-two block">
+          <div class="time">
+            <h1 class="prayer-name">المغرب</h1>
+            <h2 class="prayer" id="maghrib">00:00</h2>
+          </div>
+          <div class="time">
+            <h1 class="prayer-name">العشاء</h1>
+            <h2 class="prayer" id="3icha2">00:00</h2>
+          </div>
+        </div>
+      </div>
+      <!-- choose a city -->
+      <div class="city-selector">
+        <label for="city">choose a city :</label>
+        <select name="city" id="cities-selector"></select>
+      </div>
+    </main>
+    <footer>
+      <p>Prayer Times Application By Hamid Mbairik</p>
+    </footer>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Reem+Kufi:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #204b57;
+  font-family: "Poppins", sans-serif;
+}
+
+.project-title {
+  text-align: center;
+  color: #c2b8b2;
+  padding: 15px;
+  text-decoration: underline;
+  letter-spacing: 1.5px;
+}
+.date {
+  text-align: center;
+  color: #c2b8b2;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+.city {
+    display: flex;
+    justify-content: space-around;
+}
+
+.city .city-name-ar {
+    font-size: 60px;
+    font-family: 'Reem Kufi', sans-serif;
+    color: #197BBD;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.city .city-name-en {
+    font-size: 60px;
+    padding: 0 15px;
+    color: #125E8A;
+    text-align: left;
+}
+
+.times {
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.times .time {
+    border-radius: 15px;
+    width: 170px;
+    height: 170px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    background: #8A716A;
+    transition: .5s;
+}
+
+.times .time:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.times .block {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.times .time .prayer {
+    background: #C2B8B2;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.times .time .prayer-name {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.city-selector {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.city-selector label {
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: underline;
+    padding-right: 15px;
+    color: #C2B8B2;
+}
+
+.city-selector select{
+    width: 50%;
+    border-radius: 10px;
+    background: transparent;
+    padding: 10px 15px;
+    font-size: 25px;
+    color: #c2b8b2;
+    font-family: 'Reem Kufi', sans-serif;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #000;
+}
+
+footer p{
+    text-align: center;
+    color: #fff;
+    font-weight: 700`;
+}
+
+.second-two {
+    flex-direction: row-reverse;
+}
+
+.first-two {
+    flex-direction: row-reverse;
+}
+
+.third-two {
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width:1236px) {
+    .times {
+        margin-top: 0;
+    }
+    .times .block {
+        flex-direction: column;
+    }
+    .times .block .time {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .city .city-name-ar {
+        padding: 0;
+        font-size: 25px;
+    }
+    .city .city-name-en {
+        padding: 0;
+        font-size: 25px;
+    }
+    .times {
+        flex-direction: column;
+    }
+    .times .block {
+        width: 100%;
+    }
+    .times .block .time {
+        width: 90%;
+    }
+    .city-selector {
+        flex-direction: column;
+    }
+    .city-selector select {
+    margin-top: 25px;
+    }
+    .times .block {
+        width: 100%;
+        align-items: center;
+    }
+}
